@@ -106,7 +106,7 @@ class Etre_Promomod_CartController extends Mage_Checkout_CartController
                     endif;
                 }
             } else {
-                $this->_getSession()->addSuccess($this->__('Coupon code was canceled.' . " " . $this->__('You may need to refresh the cart page to see changes.')));
+                $this->_getSession()->addSuccess($this->__('Coupon code was canceled.') . " " . $this->__('You may need to refresh the cart page to see changes.'));
             }
         } catch (Mage_Core_Exception $e) {
             $this->_getSession()->addError($e->getMessage());
